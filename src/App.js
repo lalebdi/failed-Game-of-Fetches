@@ -13,3 +13,6 @@ function App() {
 }
 
 export default App;
+
+
+// create the state here and have axios pull the data from the API here (multiple requests) and place them in the state and then pass them down as props to the childern
