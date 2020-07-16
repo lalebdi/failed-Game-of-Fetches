@@ -5,14 +5,14 @@ export class Q1 extends Component {
     constructor(props){
         super (props);
         this.state = {
-
+            answer : []
         }
     }
 
     componentDidMount(){
         axios.get('http://anapioficeandfire.com/api/characters/16')
-        .then()
-        .catch
+        .then(res => this.setState({answer:res.data.born}))
+        .catch( err => console.error (err.message) )
     }
 
     render() {
