@@ -4,7 +4,7 @@ export class PageNotFound extends Component {
     render() {
         return (
             <div>
-                <h1>Sorry You Page Is Not Found !!</h1>
+                <h1>Sorry Your Page Is Not Found !!</h1>
             </div>
         )
     }
