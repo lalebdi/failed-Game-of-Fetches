@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import RaisedButton from 'material-ui/RaisedButton'
+//insert the card import here
+
 
 export class Q1 extends Component {
     constructor(props){
@@ -7,6 +11,11 @@ export class Q1 extends Component {
         this.state = {
             answer : []
         }
+    }
+
+    continue = e => { // calls nextPage in the Home. this is done by props
+        e.preventDefault();
+        this.props.nextPage();
     }
 
     componentDidMount(){
@@ -17,9 +26,11 @@ export class Q1 extends Component {
 
     render() {
         return (
-            <div>
-                
-            </div>
+           <MuiThemeProvider>
+               <React.Fragment>
+
+               </React.Fragment>
+           </MuiThemeProvider>
         )
     }
 }

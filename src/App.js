@@ -1,6 +1,6 @@
 import React from 'react';
-import axios from 'axios';
 import './App.css';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -10,6 +10,8 @@ function App() {
       <h1>I need to render the info in a material ui card</h1>
       <h1>Need to place the continue and back buttons and their methods</h1>
       <h1>Components created and linking is left</h1>
+      <Home />
+
     </div>
   );
 }
